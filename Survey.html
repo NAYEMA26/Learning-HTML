@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>NAYEMA RFS26</title>
+
+        <style>
+            body{
+                background-color: rgb(43, 186, 226);
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            form{
+                background-color: white;
+                max-width: 600px;
+                max-height: 2200px;
+                margin: 50px auto;
+                padding: 30px 20px dotted;
+                box-shadow: 2px 5px 10px cornflowerblue;
+
+            }
+
+            .info{
+                text-align: left;
+                
+                margin-bottom: 25px;
+            }
+
+            .info label{
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .info input, .info select, .info textarea{
+                
+                border: 1px double grey;
+                border-radius: 2px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding: 10px;
+                width: 95%;
+            }
+
+            .info input[type="radio"],
+            .info input[type="checkbox"]{
+                display: inline-block;
+                width: auto;
+            }
+
+            button{
+                background-color: blueviolet;
+                border: 1px double gray;
+                border-radius: 2px;
+                font-family: sans-serif;
+                font-size: 26px;
+                display: block;
+                width: 100%;
+                
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 >Patuakhali Science & Technology University</h1>
+        <h2 >PSTU CSE CLUB Survey Form</h2>
+        <br/>
+        <form class="form">
+            <div class="info">
+                <label for="name" id="name">
+                    Name       :  
+                </label>
+                <input type="text" id="name" placeholder="Enter your name"/>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label for="id" id="id">
+                    ID No      :  
+                </label>
+                <input type="text" id="id" placeholder="Enter your ID No"/>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label for="reg" id="reg">
+                    Reg No     :
+                </label>
+                <input type="text" id="reg" placeholder="Enter your Reg No"/>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label for="email" id="email">
+                    E-mail    : 
+                </label>
+                <input type="text" id="email" placeholder="Email Address"/>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label for="age" id="age">
+                    Age       :
+                </label>
+                <input type="text" id="age" placeholder=""/>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label for="semester" id="semester">
+                    Your Level & Semester: 
+                </label>
+
+                <select name="semester" id="semester">
+                    <option value="L-1,S-1">L-1,S-1</option>
+                    <option value="L-1,S-2">L-1,S-2</option>
+                    <option value="L-2,S-1">L-2,S-1</option>
+                    <option value="L-2,S-2">L-2,S-2</option>
+                    <option value="L-3,S-1">L-3,S-1</option>
+                    <option value="L-3,S-2">L-3,S-2</option>
+                    <option value="L-4,S-1">L-4,S-1</option>
+                    <option value="L-4,S-2">L-4,S-1</option>
+                </select>
+            </div>
+
+            <br/>
+            <div class="info">
+                <label>
+                    Is it helpful for you?
+                </label>
+
+                <label for="yes">
+                    <input type="radio" id="yes" name="opinion">Yes
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="opinion">No
+                </label>
+                <label for="confused">
+                    <input type="radio" id="confused" name="opinion">Confused
+                </label>
+            </div>
+        <br/>
+
+        <div class="info">
+            <label>Languages and Frameworks may you known
+            <small>(Click on the language name)</small>
+            </label>
+
+            <br/>
+            <label for="c">
+                <input type="checkbox" name="c">C</input>
+            </label>
+
+            <br/>
+            <label for="c++">
+                <input type="checkbox" name="c++">C++</input>
+            </label>
+
+            <br/>
+            <label for="c#">
+                <input type="checkbox" name="c#">C#</input>
+            </label>
+
+            <br/>
+            <label for="java">
+                <input type="checkbox" name="java">Java</input>
+            </label>
+
+            <br/>
+            <label for="JS">
+                <input type="checkbox" name="JS">JavaScript</input>
+            </label>
+
+            <br/>
+            <label for="react">
+                <input type="checkbox" name="react">React</input>
+            </label>
+
+            <br/>
+            <label for="snake">
+                <input type="checkbox" name="snake">Snake</input>
+            </label>
+
+            <br/>
+            <label for="spring">
+                <input type="checkbox" name="spring">Spring</input>
+            </label>
+
+            <br/>
+            <label for="scratch">
+                <input type="checkbox" name="scratch">Scratch</input>
+            </label>
+        </div>
+
+        <br/>
+        <div class="info">
+            <label for="photo" id="photo">
+                Photo       :
+            </label>
+            <input type="file" id="photo" placeholder=""/>
+        </div>
+
+        <div class="info">
+            <label for="feedback">
+                Any issue ocures or suggestions 
+            </label>
+
+            <textarea name="feedback" id="feedback"
+            placeholder="Enter your massage here">
+        </textarea>
+        </div>
+
+
+        <br/>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+        </form>
+    </body>
+</html>

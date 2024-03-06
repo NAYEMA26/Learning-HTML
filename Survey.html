@@ -48,7 +48,7 @@
             }
 
             button{
-                background-color: blueviolet;
+                background-color: rgb(226, 125, 43);
                 border: 1px double gray;
                 border-radius: 2px;
                 font-family: sans-serif;
@@ -70,7 +70,7 @@
                 <label for="name" id="name">
                     Name       :  
                 </label>
-                <input type="text" id="name" placeholder="Enter your name"/>
+                <input type="text" id="name" placeholder="Enter your name" />
             </div>
 
             <br/>
@@ -78,7 +78,7 @@
                 <label for="id" id="id">
                     ID No      :  
                 </label>
-                <input type="text" id="id" placeholder="Enter your ID No"/>
+                <input type="text" id="id" placeholder="Enter your ID No"required/>
             </div>
 
             <br/>
@@ -99,10 +99,19 @@
 
             <br/>
             <div class="info">
-                <label for="age" id="age">
-                    Age       :
+                <label>
+                    Gender  :
                 </label>
-                <input type="text" id="age" placeholder=""/>
+
+                <label for="male">
+                    <input type="radio" id="male" name="opinion">Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="opinion">Female
+                </label>
+                <label for="Other's">
+                    <input type="radio" id="Other's" name="opinion">Other's
+                </label>
             </div>
 
             <br/>
@@ -119,7 +128,7 @@
                     Your Level & Semester: 
                 </label>
 
-                <select name="semester" id="semester">
+                <select name="semester" id="semester" required>
                     <option value="L-1,S-1">L-1,S-1</option>
                     <option value="L-1,S-2">L-1,S-2</option>
                     <option value="L-2,S-1">L-2,S-1</option>
@@ -223,6 +232,7 @@
         <button type="submit" value="submit">
             Submit
         </button>
+
         </form>
     </body>
 </html>

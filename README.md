@@ -1,2 +1,6 @@
 # Learning-HTML
 Testing Project........ 
+
+## If you are run the tea.html file and the tea_style.css file. Then you will see the animated tea...
+
+![Screenshot 2024-03-18 215105](https://github.com/NAYEMA26/Learning-HTML/assets/134846919/1dd55f4b-c034-47c7-bf56-9101a3425d6c)
